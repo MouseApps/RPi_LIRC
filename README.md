@@ -11,10 +11,21 @@ Turn your Raspberry Pi into an IR controller for your Lutron light switch.
 <h2>Audience</h2>
 Those who want to turn a Raspberry Pi into a controller for your light switch.
 
-<h2>Let's get started!</h2>
+<h2>Let's get started with a mac!</h2>
 
 <h3>Step 1: Obtain Hardware</h3>
 We have tested this guide with the following hardware:
 <ul>
-<li>Raspberry Pi2 B+</li>
-<li>IR Board</li>
+<li>Raspberry Pi2 B+ TODO: LINK TO AMAZON</li>
+<li>IR Board todo: link to board</li>
+<li>power cable</li>
+<li>todo: ASSORTED MOUSEYS</li>
+
+todo: clean install of raspian with head
+go headless with ssh
+unplug and place in room with internet connection and plug into ir module 
+apt-get dist-upgrade
+apt-get update
+
+aptget intsall lirc
+aptet (lamp stack)
