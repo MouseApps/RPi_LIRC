@@ -52,7 +52,13 @@ How to enable SSH:
 * Push down arrow key until "Interfacing Options" is highlighted and push the Enter key
 * Push down arrow key until SSH is highlighted and push the Enter key
 * Push Enter again 
-* You should see this ![Success](images/SSH.jpg "SSH")
+* You should see this ![Success](images/SSHEnabled.jpg "SSH")
+* Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
+
+### Step 4: Attach IR board
+
+I don't think there would be any impact of having the board attached through steps 1-3 but we held off until SSH was enabled to plug it in. Keeping it wrapped in the bubble wrap kept it safe from splashes
+
 
 
 
