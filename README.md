@@ -56,15 +56,21 @@ How to enable SSH:
 * If you are connecting via WiFi, be sure to configure the Pi to connect to your router as this will make it impossible to go headless once you unplug everything
 * Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
 
-TL:DR Boot to Desktop, enable SSH, shutdown and move to convenient location
+TL:DR Boot to Desktop, enable SSH
 
-### Step 4: Attach IR board
+### Step 4: Enable Static IP for Pi
+
+Setting up the Pi will allow you to navigate to the Pi using a consistent internal IP - this is important because it is possible that under a new DHCP lease, the Pi will receive a new IP and can cause a speed bump down the road.
+
+Depending on your ISP your router will have a different procedure to configure a static IP for your Pi. 
+
+### Step 5: Attach IR board
 
 I don't think there would be any impact of having the board attached through steps 1-3 but we held off until SSH was enabled to plug it in. Keeping it wrapped in the bubble wrap kept it safe from splashes. To attach the board, simply sandwich the two together - shouldn't take too much effort so __dont force it__.
 
 TL:DR S'mores
 
-### Step 5: Attach power to Pi and connect via SSH
+### Step 6: Attach power to Pi and connect via SSH
 
 SSH'ing into the Pi will allow you to contorl the Pi via command line just like how we did it in Step 3. This allows you to run your Pi "Headless", meaning no monitor or keyboad attached to it. This is helpful for our build because we generally won't have a monitor or keyboard attached to this device.
 
