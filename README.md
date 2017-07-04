@@ -29,3 +29,5 @@ apt-get update
 
 aptget intsall lirc
 aptet (lamp stack)
+
+this is a test of adding text from VSC
