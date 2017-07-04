@@ -46,10 +46,18 @@ TL:DR Google it
 
 At this point, you probably have your Pi in an inconvenient location to get this far due to needing a monitor, keyboard, mouse and such. This step will allow you to move your Pi into a more convenient location such a bookshelf, nightstand, garage, wine cellar (hopefully you have the Wifi USB dongle) and control the Pi remotely from Secure Shell or SSH.
 
-How to enable terminal:
-* Click on the Terminal icon on the top left hand corner of the Raspberry GUI ![Alt](/images/Terminal.tiff "Terminal")
-* Type in the following command
+How to enable SSH:
+* Click on the Terminal icon on the top left hand corner of the Raspberry GUI (You can do this through the GUI but this will get us used to using Terminal) ![Terminal Icon](https://github.com/MouseApps/RPi_LIRC/blob/master/SSHEnabled.jpg "Terminal")
+* Type in the following command   `sudo raspi-config`
+* Push down arrow key until "Interfacing Options" is highlighted and push the Enter key
+* Push down arrow key until SSH is highlighted and push the Enter key
+* Push Enter again
 
+
+
+
+* Type in the following command   `sudo apt-get update`
+* Then type in the following command   `sudo apt-get dist-upgrade` (sip coffee)
 
 todo: clean install of raspian with head
 go headless with ssh
