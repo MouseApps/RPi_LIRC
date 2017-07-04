@@ -30,9 +30,9 @@ Stuff You'll Need:
 * Ethernet cable or WiFi dongle
 * Mouse (just to install OS and turn on SSH)
 * MicroSD card with latest version of Raspian
-* Diet Coke, Coffee, Beer, or other favorite tinkering beverage
-* 30 minutes to 1 hour
+* Diet Dr. Pepper, Turkish Coffee, Pilsner, or other favorite tinkering beverage
 * Mac or PC with PuTTY
+* 30 minutes to 1 hour
 
 TL:DR Get your Pi all wired up and ready to go with a separate computer handy for SSH'ing
 
@@ -42,7 +42,7 @@ We won't go into too much detail here as this has been covered ad nauseum on the
 
 TL:DR Google it
 
-### Step 3: Go Headless (Enable SSH)
+### Step 3: Go Headless (Enable SSH) and Connect to WIFI
 
 At this point, you probably have your Pi in an inconvenient location to get this far due to needing a monitor, keyboard, mouse and such. This step will allow you to move your Pi into a more convenient location such a bookshelf, nightstand, garage, wine cellar (hopefully you have the Wifi USB dongle) and control the Pi remotely from Secure Shell or SSH.
 
@@ -53,13 +53,25 @@ How to enable SSH:
 * Push down arrow key until SSH is highlighted and push the Enter key
 * Push Enter again 
 * You should see this ![Success](images/SSHEnabled.jpg "SSH")
+* If you are connecting via WiFi, be sure to configure the Pi to connect to your router as this will make it impossible to go headless once you unplug everything
 * Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
+
+TL:DR Boot to Desktop, enable SSH, shutdown and move to convenient location
 
 ### Step 4: Attach IR board
 
-I don't think there would be any impact of having the board attached through steps 1-3 but we held off until SSH was enabled to plug it in. Keeping it wrapped in the bubble wrap kept it safe from splashes
+I don't think there would be any impact of having the board attached through steps 1-3 but we held off until SSH was enabled to plug it in. Keeping it wrapped in the bubble wrap kept it safe from splashes. To attach the board, simply sandwich the two together - shouldn't take too much effort so __dont force it__.
 
+TL:DR S'mores
 
+### Step 5: Attach power to Pi and connect via SSH
+
+SSH'ing into the Pi will allow you to contorl the Pi via command line just like how we did it in Step 3. This allows you to run your Pi "Headless", meaning no monitor or keyboad attached to it. This is helpful for our build because we generally won't have a monitor or keyboard attached to this device.
+
+How to connect to Pi via SSH:
+
+* Plug Pi into power source which will turn Pi on
+* 
 
 
 
@@ -74,5 +86,3 @@ apt-get update
 
 aptget intsall lirc
 aptet (lamp stack)
-
-this is a test of adding text from VSC
