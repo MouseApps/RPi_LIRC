@@ -51,7 +51,8 @@ How to enable SSH:
 * Type in the following command   `sudo raspi-config`
 * Push down arrow key until "Interfacing Options" is highlighted and push the Enter key
 * Push down arrow key until SSH is highlighted and push the Enter key
-* Push Enter again
+* Push Enter again 
+* You should see this ![Success](images/SSH.jpg "SSH")
 
 
 
