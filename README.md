@@ -86,7 +86,7 @@ How to connect to Pi via SSH:
 * Type in the following command   `sudo apt-get update`
 * Then type in the following command   `sudo apt-get dist-upgrade` (sip coffee)
 * Type in the following command   `sudo apt-get install lirc` to get the LIRC library - this will allow us to write shell scripts that will send IR commands to our devices
-
+* Brew coffee
 
 aptget intsall lirc
 aptet (lamp stack)
