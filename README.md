@@ -28,7 +28,7 @@ Stuff You'll Need:
 * IR Board [(here is the on we used)](https://www.amazon.com/Infrared-Shield-RPi/dp/B01C2AQL62/ref=sr_1_1?s=electronics&ie=UTF8&qid=1499172489&sr=1-1&keywords=pi+ir>)
 * Power cable
 * Ethernet cable or WiFi dongle
-* Mouse (just to install OS and turn on SSH)
+* Mouse/Keyboard/Monitor (just to install OS and turn on SSH)
 * MicroSD card with latest version of Raspian
 * Diet Dr. Pepper, Turkish Coffee, Pilsner, or other favorite tinkering beverage
 * Mac or PC with PuTTY
@@ -52,10 +52,9 @@ How to enable SSH:
 * Push down arrow key until "Interfacing Options" is highlighted and push the Enter key
 * Push down arrow key until SSH is highlighted and push the Enter key
 * Push Enter again 
-* You should see this ![Success](images/SSHEnabled.jpg "SSH")
+* You should see this ![Success](images/SSHEnabled.jpg "SSH Success")
 * If you are connecting via WiFi, be sure to configure the Pi to connect to your router as this will make it impossible to go headless once you unplug everything
 * While you are here, be a proactive Pi enthusiast and change your password on the Pi through this same menu - this will be the new password you use to SSH into the Pi. Safety first!
-* Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
 
 TL:DR Boot to Desktop, enable SSH
 
@@ -64,6 +63,8 @@ TL:DR Boot to Desktop, enable SSH
 Setting up the Pi will allow you to navigate to the Pi using a consistent internal IP - this is important because it is possible that under a new DHCP lease, the Pi will receive a new IP and can cause a speed bump down the road because you won't be able to find the Pi on your network very easily.
 
 Depending on your ISP your router will have a different procedure to configure a static IP for your Pi. 
+
+If you don't want to assign a static IP at this time, open up Terminal on the Pi and type in the following command: `ifconfig` and grab the value 
 
 ### Step 5: Attach IR board
 
@@ -77,19 +78,15 @@ SSH'ing into the Pi will allow you to contorl the Pi via command line just like 
 
 How to connect to Pi via SSH:
 
+* Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
 * Plug Pi into power source which will turn Pi on and wait roughly 30 seconds to 1 minute for the Pi to get to the Desktop so you can SSH into it.
-* Grab your computer and open terminal or other SSH client and 
-
-
-
+* Grab your computer and open terminal or other SSH client and log into Pi using the IP address that you assigned in the earlier steps
+* Type in your user name (Probably "Pi: (w/o quotes)) and Password (unique password you created in step 3)
+* If you logged in correctly, you should see the following prompt in your terminal window TODO: image of terminal
 * Type in the following command   `sudo apt-get update`
 * Then type in the following command   `sudo apt-get dist-upgrade` (sip coffee)
+* Type in the following command   `sudo apt-get install lirc` to get the LIRC library - this will allow us to write shell scripts that will send IR commands to our devices
 
-todo: clean install of raspian with head
-go headless with ssh
-unplug and place in room with internet connection and plug into ir module 
-apt-get dist-upgrade
-apt-get update
 
 aptget intsall lirc
 aptet (lamp stack)
