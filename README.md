@@ -54,13 +54,14 @@ How to enable SSH:
 * Push Enter again 
 * You should see this ![Success](images/SSHEnabled.jpg "SSH")
 * If you are connecting via WiFi, be sure to configure the Pi to connect to your router as this will make it impossible to go headless once you unplug everything
+* While you are here, be a proactive Pi enthusiast and change your password on the Pi through this same menu - this will be the new password you use to SSH into the Pi. Safety first!
 * Sip Beer, shut down Pi, and move the Pi to a more convenient location that has line of sight to your IR device
 
 TL:DR Boot to Desktop, enable SSH
 
 ### Step 4: Enable Static IP for Pi
 
-Setting up the Pi will allow you to navigate to the Pi using a consistent internal IP - this is important because it is possible that under a new DHCP lease, the Pi will receive a new IP and can cause a speed bump down the road.
+Setting up the Pi will allow you to navigate to the Pi using a consistent internal IP - this is important because it is possible that under a new DHCP lease, the Pi will receive a new IP and can cause a speed bump down the road because you won't be able to find the Pi on your network very easily.
 
 Depending on your ISP your router will have a different procedure to configure a static IP for your Pi. 
 
@@ -76,8 +77,8 @@ SSH'ing into the Pi will allow you to contorl the Pi via command line just like 
 
 How to connect to Pi via SSH:
 
-* Plug Pi into power source which will turn Pi on
-* 
+* Plug Pi into power source which will turn Pi on and wait roughly 30 seconds to 1 minute for the Pi to get to the Desktop so you can SSH into it.
+* Grab your computer and open terminal or other SSH client and 
 
 
 
